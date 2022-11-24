@@ -1015,7 +1015,7 @@ void end_game(){//エンディング
 		Glcd_str_wait(0,16,"ｺﾒﾝﾄﾊ ｵﾜﾘﾃﾞｽ",10);
 		_delay_ms(1000);
 		Glcd_str_wait(0,24,"ﾎﾝﾄﾆ ｱｿﾝﾃﾞｸﾚﾃ ｱﾘｶﾞﾄｳ",10);
-		Glcd_str_wait(0,32,"122 ｶｲｾｲ ﾌｼﾞﾀ",10);
+		Glcd_str_wait(0,32,"--------------",10);
 		_delay_ms(3000);
 	}
 	else{
@@ -1040,7 +1040,7 @@ void end_game(){//エンディング
 	Glcd_str_wait(9,28,"Graphic LCD SYSTEM",10);
 	_delay_ms(1000);
 	Glcd_str_wait(27,44,"presented by",10);
-	Glcd_str_wait(28,52,"Kodai Fujita",10);
+	Glcd_str_wait(28,52,"-----------",10);
 	_delay_ms(3000);
 	app_number = MENU;
 }

@@ -25,7 +25,7 @@
 	_delay_ms(2000);
 	Glcd_str_wait(0,16,"≤‹’Ÿ –∆πﬁ∞— º≠≥ √ﬁΩ°",10);
 	_delay_ms(2000);
-	Glcd_str_wait(0,24,"122∂≤ Ãºﬁ¿ ∫≥¿ﬁ≤",10);
+	Glcd_str_wait(0,24,"----------------",10);
 	_delay_ms(4000);
 	Clear_Screen();
 	

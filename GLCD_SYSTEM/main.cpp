@@ -184,13 +184,13 @@ ISR(TIMER1_COMPA_vect)
 int main(void)//大元のメイン関数
 {
 	//InitI2c();
-	DDRA=0xff;//この辺は「テキスト集」の「AVR入門」で読んで下さい
+	DDRA=0xff;
 	DDRB=0xff;//Arduino的に言うと「pinMode」です。
 	DDRC=0xfc;
 	PORTA=0;//ここで、最初に出力をオフにすることで、不具合対策をしている
 	PORTB=0;//この文はArdiono的に言うと「digitalWrite」
 	PORTC=0b00010000;
-	//シリアル通信の設定。詳しいことは「開成物理部テキスト　マイコン編」もしくは動画「零からの電子工作(零電)」の「シリアル通信」でどうぞ。
+	
 	UCSR0A=0b00000000;
 	UCSR0B=0b10010000;//受信・割り込み有効
 	UCSR0C=0b00100110;//非同期通信・偶数パリティ8bit
@@ -215,7 +215,7 @@ int main(void)//大元のメイン関数
 	//MCUCR=0b00000010;
 
 	sei();//割り込みの許可
-	Glcd_SelectChip(TRUE,TRUE);//この辺はグラフィックLCDの設定。詳しくは「開成物理部テキスト　マイコン編」まで。というか丸コピ
+	Glcd_SelectChip(TRUE,TRUE);//この辺はグラフィックLCDの設定。
 	Glcd_Disp(TRUE);
 	Glcd_SelectChip(TRUE,TRUE);
 	Glcd_StartLine(0);
